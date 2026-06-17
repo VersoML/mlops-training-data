@@ -38,11 +38,11 @@ The `*_scored.parquet` files add one column:
 
 ### Drift in `churn_drifted.parquet`
 
-Same 10 000 rows and identical `churned` labels (~7.9% churn); only the input features are shifted, to exercise data-drift detection:
+Same 10 000 rows and identical `churned` labels (~11.1% churn); only the input features are shifted, to exercise data-drift detection:
 
-- `mrr_eur` mean ≈ 63 → 82
+- `mrr_eur` mean ≈ 64 → 106
 - `nb_logins_30j` mean ≈ 7.8 → 8.4
-- `has_integration` rate ≈ 0.30 → 0.41
+- `has_integration` rate ≈ 0.29 → 0.40
 - `plan` mix flips: `Free`-majority → `Pro`-majority (`Enterprise` roughly unchanged)
 - `tenure_days`, `nb_features_used`, `support_tickets_90j` unchanged
 
